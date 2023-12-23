@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "kafic_baza",
-    "host": "127.0.0.1",
+    "username": "ugo324al7kpbdd1g",
+    "password": "Mm5a8PMmud9nUgX9a4EK",
+    "database": "bkgzuhxnutdwl9sjnwgj",
+    "host": "bkgzuhxnutdwl9sjnwgj-mysql.services.clever-cloud.com",
     "dialect": "mysql"
   },
   "test": {
