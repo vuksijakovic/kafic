@@ -1,0 +1,28 @@
+<script>
+    id = localStorage.getItem('id');
+   
+
+fetch('/korisnik/' + id)
+  .then(response => response.json())
+  .then(data => {
+    if (data.postoji) {
+      const korisnik = data.korisnik;
+      console.log('Korisnik pronađen:', korisnik);
+      if(korisnik.tip=="konobar") {
+        window.location.href="konobar.html";
+      }
+      else {
+        window.location.href="sank.html";
+      }
+    } else {
+      console.log('Korisnik nije pronađen.');
+      // Handle the case where the user is not found
+    }
+  })
+  .catch(error => {
+    console.error('Greška prilikom pretrage korisnika:', error);
+    // Handle errors here
+  });
+
+
+</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Registracija</h2>
+            <form id ="registruj" >
+                <div class="form-group">
+                    <label for="username">Korisničko ime</label>
+                    <input type="text" class="form-control" id="username" placeholder="Unesi korisničko ime">
+                </div>
+                <div class="form-group">
+                    <label for="password">Lozinka - duža od 8 karaktera</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="password" placeholder="Unesi željenu lozinku">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="showPassword">Prikaži</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="role">Uloga</label>
+                    <select class="form-control" id="role" name="role">
+                        <option value="konobar">Konobar</option>
+                        <option value="sank">Sank</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Registruj se</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>Već si registrovan? <a href="index.html">Prijavi se</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies (optional, but needed for some Bootstrap features) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="register.js"></script>
+</body>
+</html>
